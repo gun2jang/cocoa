@@ -1,0 +1,52 @@
+.courseContent{
+    margin: 15vh 5vw;
+}
+.courseContent-toptabs{
+    border-bottom: 4px solid black;
+}
+.courseContent-toptabs > span{
+    display: inline-block;
+    padding: 5vh 2vw;
+    font-size: 30px;
+}
+.courseContent-toptabs > span:nth-child(1){
+    background-color: black;
+    color: white;
+}
+#courseSearch{
+    margin: 3vh 0;
+    border: 0;
+    font-size: 25px;
+    padding: 3vh 0;
+    border-bottom: 3px solid black;
+    min-width: 600px;
+}
+#courseSearchbtn{
+    padding: 3vh 1vw;
+    font-size: 25px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+.coursetab{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 3.5vh 0.5vw;
+    transition: all 0.3s;
+}
+.coursetab:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.coursetab-title{
+    font-size: 30px;
+    margin: 3vh 0;
+}
+.coursetab-info{
+    font-size: 20px;
+    margin-bottom: 1vh;
+}
+.coursetab-price{
+    font-weight: bold;
+    margin-bottom: 1vh;
+}

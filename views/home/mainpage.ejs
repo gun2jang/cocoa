@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>mainpage</title>
+        <% include ../partials/mainhead %>
+    </head>
+    <body>
+        <div class="wrapper">
+            <% include ../partials/pageheader %>            
+            <% include ../user/login %>
+            <% include ../user/signup %>
+            
+
+            <div class="container">
+                <% include ../partials/bestteacher.ejs %>
+                <% include ../partials/bestcourse.ejs %>
+                <% include ../partials/bestpackage.ejs %>
+            </div>
+        </div>
+        <% include ../partials/footer.ejs %>
+    </body>
+    <script src="/js/mainpage.js"></script>
+</html>

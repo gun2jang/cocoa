@@ -1,0 +1,12 @@
+.wrapper{
+    background: linear-gradient(110deg, #f783ac 0%, #5f3dc4 100%);
+}
+.login-box-p{
+    position: relative;
+}
+.id-check{
+    position: absolute;
+    right: 0;
+    color: #3dc481; 
+    font-weight: 700;
+}

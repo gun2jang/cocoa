@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Board</title>
+        <% include ../partials/mainhead %>
+        <link rel="stylesheet" href="/css/mainboard.css">
+        <link rel="stylesheet" href="/css/teacher.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <% include ../partials/pageheader %>            
+            <% include ../user/login %>
+            <% include ../user/signup %>
+            <div class="container">
+              <% include ../partials/bestteacher %>
+              <% include ../partials/teacherContent %>
+            </div>
+        </div>
+        <% include ../partials/footer.ejs %>
+    </body>
+    <script src="/js/mainpage.js"></script>
+</html>

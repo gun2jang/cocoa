@@ -1,0 +1,58 @@
+.package-container{
+    padding: 8vh 8vw;
+}
+.best-package-title{
+    font-size: 4em;
+    margin-bottom: 2vh;
+    font-weight: 400;
+    font-family: 'century gothic';
+}
+.package-ranking{
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.4s;
+}
+.package-ranking > div:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.package-1st-rank a{
+    padding: 3vh 0;
+    display: flex;
+    border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
+}
+.package-1st-title{
+    font-size: 2em;
+    font-weight: 700;
+}
+.package-ranking-tab a{
+    padding: 1vh 0;
+    display: flex;
+    border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
+}
+.package-ranking-tab div div{
+    line-height: 1.5em;
+}
+.package-ranking-short{
+    flex: 2;
+}
+.package-rank-title{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 1vh 0;
+}
+.package-explain{
+    font-size: 1em;
+    padding: 0.5vh 0;
+}
+.price{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.5vh 0;
+}
+.package-ranking-content{
+    flex: 5;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

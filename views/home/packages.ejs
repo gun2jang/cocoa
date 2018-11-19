@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>package</title>
+        <% include ../partials/mainhead %>
+        <link rel="stylesheet" href="/css/forpackage.css">
+        <link rel="stylesheet" href="/css/package.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <% include ../partials/pageheader %>            
+            <% include ../user/login %>
+            <% include ../user/signup %>
+            <div class="container">
+                <% include ../partials/bestpackage %>
+                <% include ../partials/packageContent %>
+            </div>
+        </div>
+        <% include ../partials/footer.ejs %>
+    </body>
+    <script src="/js/mainpage.js"></script>
+</html>

@@ -1,0 +1,30 @@
+<div class="mainboard">
+	<div class="board-container">
+		<div class="board-title">Board</div>
+		<div class="board-board">
+			<ul>
+				<% for(let i=0;i<10;i++) { %>
+				<li>
+					<a href="<%= '/board/' + posts[i].id %>" target="_self">
+						<span class="board-post-title"><%= posts[i].title %></span>
+						<span class="board-post-writer"><%= posts[i].username %></span>
+						<span class="board-post-viewcount"><%= posts[i].viewCount %></span>
+						<span class="board-post-like"><%= posts[i].like %></span>
+						<span class="board-post-date"><%= posts[i].createdDate %></span>
+					</a>
+				</li>
+				<% } %>
+			</ul>
+			<div class="board-pagenav">
+				<ul>
+					<% for(let i =1; i<= 10; i++) { %>
+					<li><a href="#"><%= i %></a></li>
+					<% } %>
+				</ul>
+			</div>
+		</div>
+		<div class="board-to-writing">
+			<a href='/board/write'><i class="fas fa-pencil-alt"></i><span>Write</span></a>
+		</div>
+	</div>
+</div>

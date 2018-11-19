@@ -1,0 +1,27 @@
+<div class="package-container">
+	<div class="best-package-title">Package Suggest</div>
+	<div class="package-ranking">
+		<div class="package-1st-rank">
+			<a href="#">        
+				<div class="package-ranking-short">    
+					<div class="package-1st-title">1. <%= packages[0].name %></div>
+					<div class="package-explain">subject : <%= packages[0].subject %></div>
+					<div class="price">price : <%= packages[0].price %></div>
+				</div>
+				<div class="package-ranking-content"><%= packages[0].sum %></div>
+			</a>
+		</div>
+		<% for(let i=1;i<5;i++) { %>
+		<div class="package-ranking-tab">
+			<a href="#">
+				<div class="package-ranking-short">
+					<div class="package-rank-title"><%= (i+1) +'. ' +  packages[i].name %></div>
+					<div class="package-explain">subject : <%= packages[i].subject + ' listener : ' + packages[i].listener %></div>
+					<div class="price">price : <%= packages[i].price %></div>
+				</div>
+				<div class="package-ranking-content"><%= packages[i].sum %></div>
+			</a>
+		</div>
+		<% } %>
+	</div>
+</div>

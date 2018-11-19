@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Board</title>
+        <% include ../partials/mainhead %>
+        <link rel="stylesheet" href="/css/mainboard.css">
+        <link rel="stylesheet" href="/css/write.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="wrapper">
+            <% include ../partials/pageheader %>            
+            <% include ../user/login %>
+            <% include ../user/signup %>
+            <div class="container">
+              <% include ../board/writeplace %>
+            </div>
+        </div>
+        <% include ../partials/footer.ejs %>
+    </body>
+    <script src="/js/mainpage.js"></script>
+</html>

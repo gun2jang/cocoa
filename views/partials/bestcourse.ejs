@@ -1,0 +1,19 @@
+<div class="course-container">
+	<% for(let i=0;i<8;i++) { %>
+	<div class="course-sum">
+		<a href="#">
+			<p><%= courses[i].subject + '  ' + courses[i].teacher %></p>
+			<h1 class="course-name"><%= courses[i].title %></h1>
+			<div class="course-explain">
+				평점 : <%= courses[i].star %><br>
+				follower : <%= courses[i].follower %><br>
+				<%= courses[i].isBest %><br>
+				<%= courses[i].sum %><br>
+				<%= courses[i].sum %><br>
+				<%= courses[i].sum %><br>
+			</div>
+			<img src="/image/bae.png">
+		</a>
+	</div>
+	<% } %>
+</div>

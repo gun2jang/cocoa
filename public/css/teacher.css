@@ -1,0 +1,40 @@
+.teacherContent{
+    padding: 10vh 10vw;
+}
+.teacherContent-ranking-title{
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    padding-bottom: 3vh;
+}
+.teacherContent-ranking-tab{
+    padding: 4vh 1vw;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.teacherContent-ranking-tab > div{
+    margin-bottom: 10px;
+}
+.teacherContent-ranking-tab:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.teacherContent-ranking-name{
+    font-size: 30px;
+}
+#courseSearch{
+    margin: 3vh 0;
+    border: 0;
+    font-size: 25px;
+    padding: 3vh 0;
+    border-bottom: 3px solid black;
+    min-width: 600px;
+}
+#courseSearchbtn{
+    padding: 3vh 1vw;
+    font-size: 25px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    margin-left: 40px;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:700');
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    min-height: 100vh;
+    position: relative;
+}
+
+.topheader{
+    color: black;
+    padding: 1.5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 700;
+}
+.topheader div{
+    display: inline-block;
+    width: 10vh;
+    transition: text-shadow 0.4s;
+}
+.topheader div:hover{
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.3);
+}
+.pagetitle{
+    margin: 0 0 0.5em 0;
+    text-align: center;
+    font-size: 4em;
+    font-family: "Nanum Gothic";
+}
+.nav{
+    display: flex;
+    font-family: "Nanum Gothic";
+    height: 5rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    /* margin: 1.4rem 0 0 0; */
+    box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 0px 0px rgba(0,0,0,0.22);
+}
+.navtab{
+    flex:1;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.1em;
+    transition: all 280ms ease-in-out;
+    transition: font-size 0ms ease;
+}
+.navtab::after,
+.navtab::before {
+  backface-visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 3.5px;
+  content: " ";
+  display: block;
+  margin: auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.navtab:hover{
+    letter-spacing: 0.2rem;
+}
+.navtab:hover::after,
+.navtab:hover::before {
+  backface-visibility: hidden;
+  width: 50%;
+}
+.navtab a{
+    color: black;
+}
+.teacher-container{
+    display: flex;
+    padding: 2.5rem 1rem 0 1rem;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+.teacher-container img{
+    width: auto;
+    height: auto;
+    max-height: 30rem;
+    overflow: hidden;
+}
+.teacher-card-hide{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 2vh;
+}
+.best-teacher-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5rem 10rem 0 10rem;
+    transition: all 150ms ease-in-out;
+}
+.best-teacher-text p{
+    margin:-0.5em 0 -0.5em 1em;
+}
+.teacher-card-hide{
+    display: none;
+    margin-top: -3rem;
+}
+.teacher-card-hide p{
+    margin: 0.5em 0.5em;
+    font-size: 1.2em;   
+}
+.best-teacher-text h1{
+    font-size: 10em;
+}
+
+.best-teacher-text:hover{
+    margin: 2.5rem 10rem;
+}
+.best-teacher-text:hover h1{
+    color: white;
+    -webkit-text-stroke: black 0.1rem;
+}
+.best-teacher-text:hover .teacher-card-hide{
+    opacity: 1;
+    display: block;
+}
+.aka{
+    font-size:1rem;
+    color:rgba(0,0,0,0.3);
+    -webkit-text-stroke: 0;
+}
+.teacher-name{
+    font-family: "Black Han Sans";
+    font-weight: 100;
+}
+.course-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 2.5rem 1rem 0 1rem;
+    justify-content: center;
+    overflow: hidden;
+}
+.course-sum{
+    flex: 1;
+    min-width: 20vw;
+    font-family: "Nanum Gothic Coding";
+    margin: 1em;
+    padding: 1em 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.course-sum a{
+    color: rgba(0, 0, 0, 0.8);
+}
+.course-name{
+    font-weight: bold;
+}
+#footer{
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    height: 100px;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 1.5em 3em;
+}
+.connect-icon{
+    display: inline-block;
+}
+.connect-icon img{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.3);
+}

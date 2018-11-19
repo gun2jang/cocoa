@@ -1,0 +1,91 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mainboard{
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 0 15vw;
+    display: flex;
+    justify-content: center;
+}
+.board-container{
+    padding: 10vh 8vw;
+    width: 100%;
+    background-color: white;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+}
+
+.board-title {
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+.board-board > ul > li{ 
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.board-board > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.board-board > ul > li > a{
+    width: 100%;
+    font-size: 20px;
+    padding: 2vh 0.5vw;
+    display: flex;
+}
+.board-board > ul > li > a > div{
+    overflow: hidden;
+}
+.board-post-title{
+    flex: 7;
+}
+.board-post-writer{
+    flex: 1;
+    text-align: center;
+}
+.board-post-viewcount{
+    flex: 1;
+    text-align: center;
+}
+.board-post-like{
+    flex: 1;
+    text-align: center;
+}
+.board-pagenav > ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 3vh 15vw;
+}
+.board-pagenav > ul > li{
+    flex: 1;
+    text-align: center;
+}
+.board-to-writing{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1vh 0;
+    text-align: right;
+}
+.board-to-writing > a{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 2vh 1vw;
+    border-radius: 4px;
+}
+.board-to-writing > a > span {
+    margin-left: 10px;
+}
+.board-to-writing > a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.board-post-date{
+    /* flex: 1; */
+}
+.footer{
+    margin: 0;
+}

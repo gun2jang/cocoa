@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Board</title>
+		<% include ../partials/mainhead %>
+		<link rel="stylesheet" href="/css/boardshow.css">
+		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="wrapper">
+			<% include ../partials/pageheader %>            
+			<% include ../user/login %>
+			<% include ../user/signup %>
+			<div class="container">
+				<div class="show-content">
+					<div class="show-content-title"><%= post.title %></div>
+					<div class="show-content-cal">
+						<span id="show-content-viewcount"><%= post.viewCount %></span>
+						<span id='show-content-date'><%= post.createdDate %></span>
+						<span id="show-content-time"><%= post.createdTime %></span>
+					</div>
+					<div class="show-content-writer"><%= post.username %></div>
+					<div class="show-content-content"><%= post.content %></div>
+					<div class="show-content-like"><span onclick='scoreup()'><i class="fas fa-heart"></i></span></div>
+					<div class="show-content-likey"><%= post.like %></div>
+				</div>
+			</div>
+		</div>
+		<% include ../partials/footer.ejs %>
+	</body>
+	<script src="/js/mainpage.js"></script>
+</html>

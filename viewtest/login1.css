@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+form{
+    margin: 0;
+}
+input:focus{
+    outline: none;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-20deg, #f783ac 0%, #5f3dc4 100%);
+}
+.login-box{
+    padding: 5%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+}
+.login-box-title{
+    font-size: 2em;
+    font-weight: 700;
+}
+.login-box-p{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0.8em 0;
+}
+.login-box-input{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+}
+.login-box-input input{
+    width: 100%;
+    height: 2.3em;
+    box-sizing: border-box;
+    padding: 0em 0.5em;
+    font-size: 1em;
+    border: 0;
+}
+.login-box-input input::placeholder{
+    color: gray;
+}
+.submit-button{
+    margin: 1.5em 0;
+    height: 2em;
+    width: 100%;
+    font-size: 1.4em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    border: #000000 1.5px solid;
+    background: #ffffff;
+    border-radius: 20px;
+    transition: all 10a0ms ease-in-out;
+}
+.submit-button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.find{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.find-span{
+    margin: 0 1em;
+}
+.find-span a{
+    text-decoration: none;
+    color: #000000;
+}

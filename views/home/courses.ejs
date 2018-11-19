@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Courses</title>
+        <% include ../partials/mainhead %>
+				<link rel="stylesheet" href="/css/mainboard.css">
+				<link rel="stylesheet" href="/css/courses.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <% include ../partials/pageheader %>            
+            <% include ../user/login %>
+            <% include ../user/signup %>
+            <div class="container">
+              <% include ../partials/bestcourse %>
+							<!-- <form action="/courses" method="POST">
+								<input type="text" name="title">
+								<input type="text" name="subject">
+								<input type="text" name="teacher">
+								<input type="text" name="star">
+								<input type="text" name="follower">
+								<input type="submit" value="submit"> 
+							</form>  -->
+							<% include ../partials/courseContent %>
+            </div>
+        </div>
+        <% include ../partials/footer.ejs %>
+    </body>
+    <script src="/js/mainpage.js"></script>
+</html>

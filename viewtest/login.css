@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body{
+    margin: 0;
+    padding: 0;
+    background: url('');
+    background-attachment: fixed;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Open Sans Condensed';
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 1.5rem;
+    padding: 10vh 5vw;
+    font-size: 2em;
+}
+.input-title{
+    margin: 0.5em 0;
+    font-family: 'Notable', sans-serif;
+}
+.input-area{
+    font-size: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: all 0ms ease-in-out;
+    padding: 1em 0.1em;
+    width: 30vw;
+    color: ivory;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+}
+.input-area::after{
+  backface-visibility: hidden;
+  background-color: ivory;
+  height: 3px;
+  content: " ";
+  display: block;
+  margin: auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.input-area:focus::after, {
+  backface-visibility: hidden;
+  width: 70%;
+  background-color: ivory;
+}
+.input-area:focus{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0;
+}
+.input-area:focus::placeholder{
+    color: ivory;
+}
+#login-button{
+    margin-top: 1em;
+    height: 4rem;
+    width: 100%;
+    border-radius: 0.5em;
+    background-color: white;
+    letter-spacing: 2px;
+    /* border: 2px black solid; */
+    border: 0;
+    color: black;
+    padding: 0;
+    font-size: 0.7em;
+}
+#login-button:hover{
+    opacity: 0.7;
+}
+.find{
+    font-size: 0.5em;
+    text-align: right;
+    font-weight: 700;
+}
+.find span{
+    margin-left: 1em;
+}
+
+
+
+
+
+.waves{
+    position: absolute;
+    bottom: 20vh;
+}
+.wave{
+    position: absolute;
+    border: 1px solid black;
+    width: 10vw;
+    height: 20vh;
+}

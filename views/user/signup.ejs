@@ -1,0 +1,24 @@
+<dialog id='signup-dialog' class='dialog'>
+    <div class='login-wrapper'>
+        <div class='login-box'>
+            <div class='login-box-title'>Join us</div>
+            <form action='/users' method='POST'>
+                <p class='login-box-p'>ID<span class='id-check'>ID Check</span></p>
+                <div class='login-box-input'>
+                    <input type='text' value='' name='username' autocomplete='off' placeholder='ID 입력' required>
+                </div>
+                <p class='login-box-p'>Password</p>
+                <div class='login-box-input'>
+                    <input type='password' name='password' value='' autocomplete='off' placeholder='Password 입력' required>
+                </div>
+                <button class='submit-button' type='submit'>JOIN</button>
+            </form>
+            <div class='find'>
+                <span class='find-span'>Already have an account with us?</span>
+                |
+                <span class='find-span'><a href='#' style='color: #32aced;'>Log in</a></span>
+            </div>
+        </div>
+    </div>
+    <div class='close-button' id='signup-close'>close</div>
+</dialog>

@@ -1,0 +1,29 @@
+<div class="courseContent">
+	<div class="courseContent-toptabs">
+		<span>국어</span>
+		<span>수학</span>
+		<span>영어</span>
+		<span>물리</span>
+		<span>화학</span>
+		<span>생명</span>
+		<span>지구</span>
+	</div>
+	<form action="#">
+		<input type="text" name="courseSearch"  id='courseSearch' placeholder="강의 검색">
+		<input type="submit" id="courseSearchbtn" value="Search">
+	</form>
+	
+	<div class="coursetabs">
+		<% for(let i=0; i < courses.length; i++) { %> 
+		<div class="coursetab">
+			<div class="coursetab-title"><%= courses[i].title %></div>
+			<div class="coursetab-info">
+				<strong><%= courses[i].teacher %></strong>
+				<span>평점 : <%= courses[i].star %></span>
+			</div>
+			<div class="coursetab-price">\10000</div>
+			<div class="coursetab-intro"><%= courses[i].sum %></div>
+		</div>
+		<% } %>
+	</div>
+</div>

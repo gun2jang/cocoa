@@ -1,0 +1,17 @@
+#courseSearch{
+    margin: 3vh 0 3vh 8vw;
+    border: 0;
+    font-size: 25px;
+    padding: 3vh 0;
+    border-bottom: 3px solid black;
+    min-width: 600px;
+}
+#courseSearchbtn{
+    padding: 3vh 1vw;
+    font-size: 25px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    margin-left: 40px;
+}

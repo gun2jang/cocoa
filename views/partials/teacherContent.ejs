@@ -1,0 +1,29 @@
+<div class="teacherContent">
+	<!-- <form action="/teachers" method="POST">
+		<input type="text" name="name">
+		<input type="text" name="subject">
+		<input type="text" name="star">
+		<input type="text" name="follower">
+		<input type="text" name="sum">
+		<input type="submit" value="제출">
+	</form> -->
+	<div class="teacherContent-ranking-title">Ranking</div>
+	<div class="teacherContent-ranking-tabs">
+		<% for(let i=0;i<10;i++) { %>
+		<div class="teacherContent-ranking-tab">
+			<div class="teacherContent-ranking-name">
+				<strong><%= (i+1) + '. ' + teachers[i].name%></strong>
+				<%= teachers[i].subject %>
+			</div>
+			<div class="teacherContent-ranking-star">평점 : <%= teachers[i].star %></div>
+			<div class="teacherContent-ranking-sum">
+				<%= teachers[i].follower + teachers[i].isBest +teachers[i].sum %>
+			</div>
+		</div>
+		<% } %>
+	</div>
+	<form action="#">
+		<input type="text" name="courseSearch"  id='courseSearch' placeholder="강의 검색">
+		<input type="submit" id="courseSearchbtn" value="Search">
+	</form>
+</div>

@@ -1,0 +1,26 @@
+.course-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 2.5rem 1rem 0 1rem;
+    justify-content: center;
+    overflow: hidden;
+}
+.course-sum{
+    flex: 1;
+    min-width: 20vw;
+    font-family: "Nanum Gothic Coding";
+    margin: 1em;
+    padding: 1em 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.course-sum a{
+    color: rgba(0, 0, 0, 0.8);
+}
+.course-name{
+    font-weight: bold;
+}

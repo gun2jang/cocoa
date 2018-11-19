@@ -1,0 +1,22 @@
+<div class='header'>
+        <div class='topheader'>
+            <% if (!username) { %>
+            <div class='topheadertab'><span id='login-button'>Log In</span></div>
+            <div class='topheadertab'><span id='signup-button'>Sign up</span></div>
+            <% } else { %>
+            <div class='topheadertab' style="margin-left:-1.7vw"><a href='/logout'><span>Log Out</span></a></div>
+            <div class="topheadertab"></div>
+            <div class='topheadertab'><span id='username'>
+                <%= username %>
+            </span></div>
+            <% } %>
+        </div>
+        <div class='pagetitle'>Project</div>
+</div>
+<div class='nav'>
+    <div class='navtab'><a href='/board'>Boards</a></div>
+    <div class='navtab'><a href='/books'>Books</a></div>
+    <div class='navtab'><a href='/courses'>Courses</a></div>
+    <div class='navtab'><a href='/teachers'>Teachers</a></div>
+    <div class='navtab'><a href='/packages'>Packages</a></div>
+</div>
